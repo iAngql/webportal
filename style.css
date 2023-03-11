@@ -1,7 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu&display=swap');
 
 body {
-    font-family: 'Ubuntu'
+    font-family: 'Ubuntu';
+    background: rgb(34,193,195);
+    background: linear-gradient(132deg, rgb(65, 255, 182) 0.00%, rgb(227, 43, 175) 100.00%);
+    background-size: 100% 200%;
+    color: rgb(255, 255, 255);
+    
+    margin: 0;
+    padding: 0;
+}
+.title {
+  font-family: 'Pacifico';
+  font-weight: 200;
+}
+
+#weather {
+  font-size: larger;
+  font-weight: 550;
 }
 
 center {
@@ -29,7 +45,7 @@ center {
     --height-of-input: 40px;
     --border-height: 2px;
     --input-bg: #fff;
-    --border-color: #2f2ee9;
+    --border-color: rgb(72, 34, 121);
     --border-radius: 30px;
     --after-border-radius: 10px;
     position: relative;
@@ -73,6 +89,7 @@ center {
   /* Hover on Input */
   .form:focus-within {
     border-radius: var(--after-border-radius);
+    border: none;
   }
   
   input:focus {
@@ -101,7 +118,22 @@ center {
     margin-top: 3px;
   }
 
-#weather {
-  text-align: left;
-  font-size: large;
+.section {
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 250px;
+}
+
+.widget {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgb(192, 147, 156);
+  display: inline-block;
+  margin: 20px;
+
+  /* just for now */
+  font-size: 24px;
 }
