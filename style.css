@@ -100,3 +100,8 @@ center {
     width: 17px;
     margin-top: 3px;
   }
+
+#weather {
+  text-align: left;
+  font-size: large;
+}
